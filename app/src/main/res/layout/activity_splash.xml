@@ -15,13 +15,13 @@
         android:background="@color/color_primary_dark"
         tools:context=".views.splash.SplashActivity">
 
-        <android.support.constraint.ConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/splashView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
-            android:visibility="visible"
+            android:visibility="gone"
             android:background="@color/color_primary">
 
             <ImageView
@@ -41,6 +41,6 @@
                 android:textSize="36dp"
                 android:textColor="@color/white"/>
 
-        </android.support.constraint.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </layout>
