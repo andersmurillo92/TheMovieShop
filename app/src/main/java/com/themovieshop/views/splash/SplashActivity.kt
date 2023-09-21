@@ -10,9 +10,9 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
-import com.themovieshop.MainActivity
 import com.themovieshop.R
 import com.themovieshop.databinding.ActivitySplashBinding
+import com.themovieshop.views.main.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
