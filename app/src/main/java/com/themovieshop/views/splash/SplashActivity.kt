@@ -1,5 +1,7 @@
 package com.themovieshop.views.splash
 
+import android.app.Activity
+import android.content.Intent
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.os.Handler
@@ -8,6 +10,7 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.WindowManager
 import android.view.animation.AccelerateInterpolator
+import com.themovieshop.MainActivity
 import com.themovieshop.R
 import com.themovieshop.databinding.ActivitySplashBinding
 
@@ -49,7 +52,11 @@ class SplashActivity : AppCompatActivity() {
 
         val mHandler1 = Handler()
         mHandler1.postDelayed({
-            TODO("Go to main activity")
+            goToActivity(MainActivity::class.java)
+            finish()
         }, 1750)
+    }
+    private fun <T: Activity>goToActivity(classType: Class<T>) {
+        startActivity(Intent(this, classType))
     }
 }
