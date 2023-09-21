@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dp_16"
-            android:text="Duartion: "
+            android:text="Duration: "
             android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@id/poster_card_view"
             app:layout_constraintTop_toBottomOf="@id/date_text_view" />
@@ -75,6 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dp_16"
             android:text="Rated: "
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@id/poster_card_view"
             app:layout_constraintTop_toBottomOf="@id/popularity_text_view" />
 
@@ -109,8 +110,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dp_16"
-        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_18"
         android:text="description"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
