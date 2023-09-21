@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
@@ -14,7 +15,7 @@
         android:background="@color/color_primary_dark"
         tools:context=".views.splash.SplashActivity">
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
             android:id="@+id/splashView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -23,27 +24,23 @@
             android:visibility="visible"
             android:background="@color/color_primary">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/logo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app_logo"
+                android:padding="64dp"/>
+
+            <TextView
+                app:layout_constraintBottom_toBottomOf="@id/logo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:text="@string/app_name"
+                android:textSize="36dp"
+                android:textColor="@color/white"/>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/app_logo"
-                    android:background="@color/color_primary"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/app_name"
-                    android:textSize="25dp"
-                    android:textColor="@color/white"/>
-
-            </LinearLayout>
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
     </LinearLayout>
 </layout>
